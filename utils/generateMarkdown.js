@@ -3,7 +3,7 @@ const axios = require('axios');
 const getGitHubUserData = async username => {
   const url = `https://api.github.com/users/${username}`;
   await axios.get(url)
-    .then(response => response.data)
+    .then(response => response)
     .catch(exception => console.error(exception));
 };
 
@@ -21,20 +21,16 @@ const renderLicenseLink = license => null;
 const renderLicenseSection = license => null;
 
 // TODO: Create a function to generate markdown for README
-const generateMarkdown = async data => {
-  const gitHubData = await getGitHubUserData(data.username);
-  
+const generateMarkdown = data => {  
   // const licenseProps = {
   //   badge: renderLicenseBadge(license),
   //   link: renderLicenseLink(license),
   //   section: renderLicenseSection(license)
   // };
-  const tableOfContents = []
-  data.forEach(question => tableOfContents.push(question.name));
+  const tableOfContents = Object.keys(data);
 
-  console.log(data, gitHubData);
-  return `
-# ${data.title}
+  console.log(data);
+  return `# ${data.title}
 
 ## Description
 
