@@ -11,31 +11,31 @@ A command-line application that dynamically generates a professional README from
 
 ## Table of Contents
 
-* ![username](#username)
+* [username](#username)
 
 
-* ![email](#email)
+* [email](#email)
 
 
-* ![title](#title)
+* [title](#title)
 
 
-* ![description](#description)
+* [description](#description)
 
 
-* ![license](#license)
+* [license](#license)
 
 
-* ![installing_dependencies](#installing_dependencies)
+* [installing_dependencies](#installing_dependencies)
 
 
-* ![tests](#tests)
+* [tests](#tests)
 
 
-* ![additional_info](#additional_info)
+* [additional_info](#additional_info)
 
 
-* ![contributing](#contributing)
+* [contributing](#contributing)
 
 
 
@@ -43,7 +43,7 @@ A command-line application that dynamically generates a professional README from
 ## Installation
 
 <code>
-npm i
+npm install
 </code>
 
 ## Usage
@@ -54,11 +54,7 @@ none
 
 ## License
 
-null
 
-null
-
-null
 
 ## Badges
 
@@ -66,10 +62,10 @@ null
 
 ## How to Contribute
 
-none
+Open to contributions.
 
 ## Tests
 
 none
 
-## This README was generated with the ![CLI README Generator](https://github.com/loveliiivelaugh/nu-hw9-cli-readme-generator) app.
+#### This README was generated with the [CLI README Generator](https://github.com/loveliiivelaugh/nu-hw9-cli-readme-generator) app.

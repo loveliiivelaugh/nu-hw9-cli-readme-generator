@@ -53,7 +53,7 @@ ${data.gif ? `
 ${tableOfContents.length > 0 && `
 ## Table of Contents
 ${tableOfContents.map(item => `
-* ![${item}](#${item})
+* [${item}](#${item})
 
 `).join("")}
 `}
@@ -72,11 +72,12 @@ ${data.additional_info}
 
 ## License
 
-${renderLicenseLink(data.license)}
-
-${renderLicenseSection(data.license)}
-
-${renderLicenseBadge(data.license)}
+${
+  // renderLicenseLink(data.license)
+  // renderLicenseSection(data.license)
+  // renderLicenseBadge(data.license)
+  ''
+}
 
 ## Badges
 
@@ -90,7 +91,7 @@ ${data.contributing}
 
 ${data.tests}
 
-## This README was generated with the ![CLI README Generator](https://github.com/loveliiivelaugh/nu-hw9-cli-readme-generator) app.
+#### This README was generated with the [CLI README Generator](https://github.com/loveliiivelaugh/nu-hw9-cli-readme-generator) app.
 `;
 };
 
