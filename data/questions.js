@@ -24,7 +24,7 @@ const questions = [
     type: 'rawlist',
     name: 'license',
     message: "What kind of license should your project have?",
-    choices: ["Open", "MIT", "None", "IDK"]
+    choices: ["Apache License 2.0", "MIT License", "Mozilla Public License 2.0", "None"]
   },
   {
     type: 'input',
