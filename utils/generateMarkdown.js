@@ -36,31 +36,33 @@ const generateMarkdown = data => {
 
 ${data.description}
 
-${data.screenshots && `
+${data.screenshots ? `
 ## Screenshots
 
 ![${data.screenshot1.name}](${data.screenshot1.url})
 
 ![${data.screenshot2.name}](${data.screenshot2.url})
-`}
+` : ''}
 
-${data.gif && `
+${data.gif ? `
 ## Demo
 
 ![${data.gif.name}](${data.gif.url})
-`}
+` : ''}
 
 ${tableOfContents.length > 0 && `
 ## Table of Contents
 ${tableOfContents.map(item => `
 * ![${item}](#${item})
 
-`)}
+`).join("")}
 `}
 
 ## Installation
 
+<code>
 ${data.installing_dependencies}
+</code>
 
 ## Usage
 
@@ -88,6 +90,7 @@ ${data.contributing}
 
 ${data.tests}
 
+## This README was generated with the ![CLI README Generator](https://github.com/loveliiivelaugh/nu-hw9-cli-readme-generator) app.
 `;
 };
 
