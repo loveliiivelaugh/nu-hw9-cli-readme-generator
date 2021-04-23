@@ -12,7 +12,11 @@ const useInquirer = () =>
   inquirer
     .prompt(questions)
     .then(answers => answers)
-    .catch(error => error.isTtyError ? console.error(error.isTtyError) : console.error(error));
+    .catch(error => 
+      error.isTtyError ? 
+      console.error(error.isTtyError) : 
+      console.error(error)
+      );
 
 //Create a function to initialize app
 const init = async () => writeToFile("README.md", generateMarkdown(await useInquirer()));
