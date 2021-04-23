@@ -8,13 +8,13 @@ A command-line application that dynamically generates a professional README from
 
 ## Screenshots
 
-[Screenshot1](/assets/images/screenshot.png)
+![Screenshot1](/assets/images/screenshot.png)
 
 ## Demo
 
-[Gif1](/assets/images/cli-readme-generator1.gif)
+![Gif1](/assets/images/cli-readme-generator1.gif)
 
-[Gif2](/assets/images/cli-readme-generator2.gif)
+![Gif2](/assets/images/cli-readme-generator2.gif)
 
 ## Table of Contents
 
